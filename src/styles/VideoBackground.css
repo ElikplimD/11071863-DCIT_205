@@ -1,0 +1,68 @@
+/* VideoBackground.css */
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: 10%; /* Center the video within the 90% container */
+    display: block; /* Remove default inline styles */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInVideo 2s ease forwards; /* Animation for the video */
+    border-radius: 80px;
+}
+
+.overlay {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .7); /* Black with 70% opacity */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInOverlay 2s ease forwards; /* Animation for the overlay */
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    text-shadow: 0px 0px 5px #2e1212;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeInText 2s ease forwards; /* Animation for the text */
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes fadeInVideo {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOverlay {
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}

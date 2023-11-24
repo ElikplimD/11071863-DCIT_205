@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    background-color: #ececec;
+}
+
+.short-courses-heading {
+    margin-top: 100px;
+}
