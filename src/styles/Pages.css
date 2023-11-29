@@ -1,19 +1,28 @@
-.aboutus {
+.aboutus,
+.courses,
+.entryrequirements {
     position: relative;
-    background-image: url('../assets/about1.jpg');
-    /*Adjust the path accordingly*/
     background-size: cover;
     background-position: center;
     padding: 90px 60px;
     border-radius: 50px;
+}
 
+.aboutus {
+    background-image: url('../assets/about1.jpg');
+}
 
+.courses {
+    background-image: url('../assets/about1.jpg');
+}
+
+.entryrequirements {
+    background-image: url('../assets/Cs\ background.jpg');
 }
 
 .textoverlay {
     padding: 20px;
     border-radius: 50px;
-
 }
 
 .textcontent {
@@ -80,7 +89,7 @@ h2 {
     box-shadow: 0px 0px 3px black
 }
 
-.imageheader {  
+.imageheader {
     font-weight: bold;
     text-align: center;
     font-size: 25px;
